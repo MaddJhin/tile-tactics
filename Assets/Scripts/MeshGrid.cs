@@ -2,7 +2,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
-public class Grid : MonoBehaviour {
+public class MeshGrid : MonoBehaviour {
 
     public int xSize, ySize;
 
