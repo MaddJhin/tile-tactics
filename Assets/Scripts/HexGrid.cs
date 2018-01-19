@@ -7,10 +7,13 @@ public class HexGrid : MonoBehaviour {
 
     public HexCell cellPrefab;
 
+    HexMesh hexMesh;
     HexCell[] cells;
 
     void Awake()
     {
+        hexMesh = GetComponentInChildren<HexMesh>();
+
         // Define cells size based on width and height of the desired grid
         cells = new HexCell[height * width];
 
